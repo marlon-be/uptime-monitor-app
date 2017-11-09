@@ -1,0 +1,13 @@
+version: '2'
+services:
+  php-base:
+    build: ./docker/php-base
+  php:
+    build: ./docker/php-cli
+    volumes:
+      - .:/var/www
+      - $SSH_AUTH_SOCK:/tmp/agent.sock
+    environment:
+      - SSH_AUTH_SOCK=/tmp/agent.sock
+    links:
+      - php-base:php-base

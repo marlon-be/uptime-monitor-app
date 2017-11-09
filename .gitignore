@@ -1,0 +1,6 @@
+/artisan
+/.env
+/composer.lock
+configuration.php
+/database.sqlite
+/vendor
