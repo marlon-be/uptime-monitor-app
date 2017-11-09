@@ -4,10 +4,16 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:marlon-be/laravel-uptime-monitor"
+        }
+    ],
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
-        "spatie/laravel-uptime-monitor": "^2.0"
+        "spatie/laravel-uptime-monitor": "dev-feature/marlon-uptime"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
